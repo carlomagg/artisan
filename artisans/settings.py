@@ -40,18 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework.authtoken',
-    'dj_rest_auth',
+    'rest_framework_simplejwt',
     'artisan',
     'corsheaders',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'dj_rest_auth.registration',
+    'djoser',
+    
 ]
 
-SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -85,14 +81,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'artisans.wsgi.application'
 
 
-#REST_FRAMEWORK = {
+REST_FRAMEWORK = {
     
-    #'DEFAULT_AUTHENTICATION_CLASSES': (
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         
-     #   'rest_framework_simplejwt.authentication.JWTAuthentication',
-  #  )
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
     
-#}
+}
 
 
 REST_FRAMEWORK = {
@@ -113,7 +109,7 @@ DATABASES = {
 
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 
 # Password validation
