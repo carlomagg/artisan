@@ -81,6 +81,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'artisans.wsgi.application'
 
 
+<<<<<<< HEAD
 REST_FRAMEWORK = {
     
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -89,6 +90,16 @@ REST_FRAMEWORK = {
     )
     
 }
+=======
+#REST_FRAMEWORK = {
+
+    #'DEFAULT_AUTHENTICATION_CLASSES': (
+
+     #   'rest_framework_simplejwt.authentication.JWTAuthentication',
+  #  )
+
+#}
+>>>>>>> 6653b5a2fdd7dc9625bf298efe332cb1c1131d7d
 
 
 REST_FRAMEWORK = {
@@ -149,3 +160,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/artisan67/artisan/static'
