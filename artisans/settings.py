@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'artisan',
     'corsheaders',
     'djoser',
+    'locations',
     
 ]
 
@@ -81,7 +82,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'artisans.wsgi.application'
 
 
-<<<<<<< HEAD
+
 REST_FRAMEWORK = {
     
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -90,7 +91,7 @@ REST_FRAMEWORK = {
     )
     
 }
-=======
+
 #REST_FRAMEWORK = {
 
     #'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -99,7 +100,7 @@ REST_FRAMEWORK = {
   #  )
 
 #}
->>>>>>> 6653b5a2fdd7dc9625bf298efe332cb1c1131d7d
+
 
 
 REST_FRAMEWORK = {
